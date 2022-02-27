@@ -17,7 +17,7 @@ body {
 .header-conteiner {
     width: 100%;
     height: 100vh;
-    background-color: rgba(176,90,196, .8);
+    background-color: rgba(76,82,160, .8);
     overflow: hidden;
     position: relative;
     
@@ -59,6 +59,7 @@ body {
     color: #fff;
 }
 .hr {
+    margin: 10px 40px;
     color: #4c52a0;
 }
 .grid-content {
@@ -100,6 +101,9 @@ body {
         text-align: center;
         padding: 20px 0;
     }
+    .item3 > p, .item1 > p{
+        padding: 0 5px;
+    }
     .item2 {
         margin: 20px 0 0 0;
     }
@@ -117,15 +121,37 @@ body {
 .number {
     margin-top: 2em;
     width: 100%;
+    position: relative;
 }
 .number-filter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color:#fff;
+    font-weight: 500;
 
     height: 100vh;
     background: linear-gradient(to top, transparent, rgba(176,90,196, .7), rgba(76,82,160, 8) ), url(img/header.jpg);
     background-image: center;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+
+    overflow: hidden;
+}
+.footer {
+    width: 100%;
+    min-height: 2em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    bottom: 0;
+
+    background: #4c52a0;
+}
+.footer p {
+    padding: 5px;
+    color:white;
+    text-align: center;
 }
